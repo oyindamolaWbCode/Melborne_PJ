@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Open Sans", "Times New Roman", Times, serif;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #e83131 40%,
+    #e83131 40%,
+    #ff4545 40%,
+    #ff4545 70%,
+    #f1faee 70%,
+    #f1faee 100%
+  );
+  color: white;
+}
+
+.header-content h1 {
+  /* min-width: 50%; */
+  position: absolute;
+  top: 6em;
+}
+
+.slider {
+  /* max-width: 50%; */
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 400px;
+}
+
+.icons img {
+  margin-right: 10px;
+}
+
+.logo-display img {
+  opacity: 0.5;
+  height: 35px;
+  width: 100%;
+}
+
+li {
+  margin-right: 20px;
+}
+
+.grid-collection {
+  height: 150px;
+  width: 98%;
+  margin: 10px;
+}
+
+.grids {
+  display: block;
+}
+
+.two {
+  background-image: url("./img/adventure-backpack-1.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+}
+
+@media (min-width: 768px) {
+  .grids {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 3em;
+  }
+
+  .one {
+    grid-column: 1 / 2;
+    text-align: end;
+    grid-row: 1 / 2;
+  }
+
+  .two {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+  }
+
+  .three img {
+    margin-top: -150px;
+    height: 500px;
+  }
+
+  .three {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .four {
+    grid-column: 2 / 4;
+    grid-row: 2 / 3;
+  }
+
+  .five {
+    grid-column: 4/5;
+    grid-row: 2 / 3;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 600px) {
+  .slider {
+    width: 70%;
+    height: 100%;
+  }
+
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header-content h1 {
+    max-width: 100%;
+    padding-bottom: 20px;
+  }
+
+  .slider {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .grid-collection {
+    margin: 0px;
+    width: 100%;
+  }
+}
