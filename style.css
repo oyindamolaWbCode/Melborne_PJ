@@ -89,26 +89,25 @@ li {
 
 .hp1 {
   background-image: url("./img/hp-1.jpg");
-  background-size: contain;
-  background-position: center;
-  height: 600px;
-  width: 80%;
+
+  height: 500px;
+  /* width: 80%; */
 }
 
 .hp2 {
   background-image: url("./img/hp-2.jpg");
-  height: 600px;
-  width: 80%;
+  height: 500px;
+  /* width: 80%; */
 }
 
 .hp3 {
   background-image: url("./img/hp-3.jpg");
-  height: 600px;
-  width: 80%;
+  height: 500px;
+  /* width: 80%; */
 }
 
 .heads h2 {
-  margin-top: 500px;
+  margin-top: 400px;
 }
 
 .templates {
@@ -160,6 +159,11 @@ li {
   opacity: 0.4;
 }
 
+.footer a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 0px;
+}
 .cont img {
   height: 80px;
   width: 80px;
@@ -168,7 +172,24 @@ li {
 .cont span {
   font-weight: bold;
 }
-@media (min-width: 768px) {
+
+.text-stroke {
+  -webkit-text-stroke: 1.5px #ff0051;
+  color: #ffffff;
+  font-size: 80px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.? @media (min-width: 768px) {
+  .carousel .carousel-inner .carousel-item {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .carousel .carousel-inner .carousel-item .colZ {
+    flex: 1 0 25%;
+  }
+
   .grids {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
