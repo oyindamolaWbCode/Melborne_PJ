@@ -55,10 +55,6 @@ li {
   margin: 10px;
 }
 
-/* .section-two {
-  position: absolute;
-} */
-
 .bg-danger img {
   color: white;
   height: 50px;
@@ -81,10 +77,6 @@ li {
   background-position: center;
   background-size: cover;
   min-height: 500px;
-}
-
-.text-container {
-  z-index: 9999;
 }
 
 .hp1 {
@@ -180,16 +172,14 @@ li {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-.? @media (min-width: 768px) {
-  .carousel .carousel-inner .carousel-item {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  .carousel .carousel-inner .carousel-item .colZ {
-    flex: 1 0 25%;
-  }
-
+@media (min-width: 768px) {
   .grids {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -261,5 +251,120 @@ li {
   .grid-collection {
     margin: 0px;
     width: 100%;
+  }
+
+  .text-stroke {
+    font-size: 40px;
+  }
+
+  .section-two {
+    display: block !important;
+  }
+
+  .section-two .text-container {
+    display: block !important;
+    width: 100%;
+    height: 300px;
+  }
+
+  .section-three {
+    display: block !important;
+  }
+
+  .section-three .text-container {
+    display: block !important;
+    width: 100%;
+    height: 300px;
+  }
+
+  .section-two,
+  .section-three {
+    display: block !important;
+  }
+
+  .section-two .text-container,
+  .section-three .text-container {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    position: relative !important;
+    margin-top: 20px;
+  }
+
+  .unrivaled {
+    display: block;
+    /* text-align: center; */
+  }
+
+  .logos {
+    margin-top: 150px;
+  }
+
+  .unrivaled-link {
+    text-align: center !important;
+  }
+
+  .heads {
+    display: block !important;
+    margin-top: 50px;
+  }
+
+  .heads h2 {
+    margin-top: 50px !important;
+  }
+
+  .templates {
+    display: block !important;
+  }
+
+  .Oneeee_ {
+    max-width: 100%;
+    max-height: fit-content;
+    background-size: cover;
+  }
+
+  .founder-section {
+    display: block !important;
+  }
+
+  .founder {
+    width: 100% !important;
+    padding: 20px !important;
+  }
+
+  .founder-text {
+    width: 100% !important;
+    padding: 10px !important;
+  }
+
+  .cont {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    align-items: center !important;
+  }
+
+  .cont-5 {
+    justify-self: center !important;
+  }
+
+  .quote {
+    display: block !important;
+  }
+
+  .quote-one {
+    width: 100% !important;
+  }
+
+  .carousel-item .col-lg-3 {
+    display: none !important;
+  }
+  .carousel-item .col-lg-3:nth-child(1) {
+    margin-top: 40px !important;
+    margin-bottom: 70px !important;
+    display: block !important;
+  }
+
+  #carouselExampleIndicators {
+    margin: 50px 0px !important;
   }
 }
